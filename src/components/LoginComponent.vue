@@ -48,7 +48,7 @@ export default {
                 var credential = {uname: self.username,pass: self.password};
                 localStorage.setItem('auth', JSON.stringify(credential));
 
-                self.$router.go('/find');
+                self.$router.go('/home');
             }
         }
     },

@@ -4,7 +4,7 @@ import MainView from '../views/MainView.vue'
 const isAuthenticated = localStorage.getItem('auth');
 const routes = [
   {
-    path: '/find',
+    path: '/home',
     name: 'home',
     component: MainView,
     beforeEnter: () => {
@@ -14,7 +14,7 @@ const routes = [
     }
   },
   {
-    path: '/login',
+    path: '/',
     name: 'login',
     beforeEnter: () => {
       if(isAuthenticated) {
