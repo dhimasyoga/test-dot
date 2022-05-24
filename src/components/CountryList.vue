@@ -186,6 +186,11 @@ export default {
         margin-bottom: .5rem;
     }
 
+    body {
+        color: #58896F !important;
+        background-color: #5F9579 !important;
+    }                                                                                                                                                                                                                                                   
+
     .input-container {
         display: flex;
         align-items: center;

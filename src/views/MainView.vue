@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+      <LogoutButton />
+
       <h1>Statistik Covid-19</h1>
       <p class="subtitle">
           <i>Web-app</i> sederhana ini akan mencari statistik Covid-19 di berbagai negara. <br>
@@ -13,25 +15,35 @@
 
 <script>
 // @ is an alias to /src
-import CountryList from '@/components/CountryList.vue'
+import CountryList from '@/components/CountryList.vue';
+import LogoutButton from '@/components/LogoutButton.vue';
 
 export default {
   name: 'MainView',
   components: {
     CountryList,
+    LogoutButton
   }
 }
 </script>
 
 <style scoped lang="scss">
+    // body {
+    //     color: #58896F;
+    //     background-color: #5F9579;
+    // }
+
     .home {
-        height: calc(100vh - 20px);
+        background-color: #5F9579;
+        height: 100vh;
         width: 100%;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        position: relative;
 
         h1, p.subtitle {
             color: #fff;
